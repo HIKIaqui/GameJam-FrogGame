@@ -1,6 +1,6 @@
 // 1. Pega os inputs do nosso objeto de controle
-var _h_input = global.key_right - global.key_left;
-var _v_input = global.key_down - global.key_up;
+_h_input = global.key_right - global.key_left;
+_v_input = global.key_down - global.key_up;
 
 // 2. Calcula a direção e velocidade (Evita o sapo ser super veloz na diagonal)
 if (_h_input != 0 || _v_input != 0) {
@@ -13,16 +13,16 @@ if (_h_input != 0 || _v_input != 0) {
 }
 
 // 3. Sistema de Colisão (Para não atravessar as paredes/objetos)
-if (place_meeting(x + h_spd, y, obj_wall)) {
-    while (!place_meeting(x + sign(h_spd), y, obj_wall)) {
+if (place_meeting(x + h_spd, y, ObjCollision)) {
+    while (!place_meeting(x + sign(h_spd), y, ObjCollision)) {
         x += sign(h_spd);
     }
     h_spd = 0;
 }
 x += h_spd;
 
-if (place_meeting(x, y + v_spd, obj_wall)) {
-    while (!place_meeting(x, y + sign(v_spd), obj_wall)) {
+if (place_meeting(x, y + v_spd, ObjCollision)) {
+    while (!place_meeting(x, y + sign(v_spd), ObjCollision)) {
         y += sign(v_spd);
     }
     v_spd = 0;

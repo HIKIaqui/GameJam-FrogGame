@@ -10,8 +10,8 @@
   "name":"Player",
   "overriddenProperties":[],
   "parent":{
-    "name":"GamejamSapo",
-    "path":"GamejamSapo.yyp",
+    "name":"Obj",
+    "path":"folders/Obj.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"PlayerSprite",
+    "path":"sprites/PlayerSprite/PlayerSprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

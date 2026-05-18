@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Controls",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"ObjCollision",
+  "eventList":[],
   "managed":true,
-  "name":"Controls",
+  "name":"ObjCollision",
   "overriddenProperties":[],
   "parent":{
     "name":"Obj",
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"CollisionSprite",
+    "path":"sprites/CollisionSprite/CollisionSprite.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
